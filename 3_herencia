@@ -12,6 +12,7 @@ class Largometraje {
 
 
 const Peli1 = new Largometraje('Pelicula 1', '2019')
+const Docu1 = new Largometraje('Documental 1', '2009')
 
 
 class Pelicula extends Largometraje {
