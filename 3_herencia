@@ -1,0 +1,42 @@
+class Largometraje {
+  constructor(name, year) {
+    this.name = name
+    this.year = year
+  }
+
+  oscar(premio = this.year) {
+    return `Mejor película de ${year}`
+  }
+
+}
+
+
+const Peli1 = new Largometraje('Pelicula 1', '2019')
+
+
+class Pelicula extends Largometraje {
+  constructor(name, year, director) {
+    super(name, year)
+    this.director = director
+  }
+
+  mostrar() {
+    return `Ahora en cines`
+  }
+
+}
+
+
+
+class Documental extends Largometraje {
+  constructor(name, year, autor) {
+    super(name, year)
+    this.autor = autor
+  }
+
+  mostrar() {
+    return `Documento multimedial`
+  }
+
+}
+
